@@ -1,4 +1,4 @@
 # Table of contents
 
-* [Initial page](README.md)
+* [Batong API Documentation](README.md)
 
