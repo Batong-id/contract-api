@@ -24,11 +24,18 @@ Lihat Analitik Toko
 {% endapi-method-summary %}
 
 {% api-method-description %}
-API Endpoint untuk melihat analitik toko : pesanan selesai, produk dilihat, produk terpopuler
+API Endpoint untuk melihat analitik toko : pesanan selesai, produk dilihat, produk terpopuler  
+  
 {% endapi-method-description %}
 
 {% api-method-spec %}
 {% api-method-request %}
+{% api-method-path-parameters %}
+{% api-method-parameter name="" type="string" required=false %}
+
+{% endapi-method-parameter %}
+{% endapi-method-path-parameters %}
+{% endapi-method-request %}
 
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
@@ -48,13 +55,15 @@ API Endpoint untuk melihat analitik toko : pesanan selesai, produk dilihat, prod
 {% endapi-method-spec %}
 {% endapi-method %}
 
+![](.gitbook/assets/jepretan-layar-2021-08-24-pukul-11.11.44.png)
+
 {% api-method method="get" host="batong.id" path="/api/penjual/produk" %}
 {% api-method-summary %}
 Lihat Semua Produk
 {% endapi-method-summary %}
 
 {% api-method-description %}
-API Endpoint untuk melihat semua produk
+API Endpoint untuk melihat semua produk  
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -95,7 +104,7 @@ Lihat Detail Produk
 {% endapi-method-summary %}
 
 {% api-method-description %}
-API Endpoint untuk melihat deta
+API Endpoint untuk melihat detail produk  
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -133,13 +142,15 @@ Kode Produk
 {% endapi-method-spec %}
 {% endapi-method %}
 
+![](.gitbook/assets/image%20%283%29.png)
+
 {% api-method method="post" host="batong.id" path="/api/penjual/produk" %}
 {% api-method-summary %}
 Tambah Produk Baru Ke Toko
 {% endapi-method-summary %}
 
 {% api-method-description %}
-API Endpoint untuk menambahkan produk baru
+API Endpoint untuk menambahkan produk baru  
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -217,6 +228,8 @@ Status Produk
 {% endapi-method-spec %}
 {% endapi-method %}
 
+![](.gitbook/assets/image%20%284%29.png)
+
 {% api-method method="put" host="batong.id" path="/api/penjual/produk/:kodeProduk" %}
 {% api-method-summary %}
 Update Status Produk
@@ -273,7 +286,7 @@ Lihat Semua Pesanan
 {% endapi-method-summary %}
 
 {% api-method-description %}
-API Endpoint untuk lihat semua pesanan yang masuk
+API Endpoint untuk lihat semua pesanan yang masuk  
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -310,6 +323,8 @@ API Endpoint untuk lihat semua pesanan yang masuk
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
+
+![](.gitbook/assets/image%20%281%29.png)
 
 {% api-method method="get" host="batong.id" path="/api/penjual/pesanan/:kodePesanan" %}
 {% api-method-summary %}
@@ -371,17 +386,11 @@ Lihat Analitik Penjualan Umum Toko
 {% endapi-method-summary %}
 
 {% api-method-description %}
-API Endpoint untuk melihat analitik penjualan toko
+API Endpoint untuk melihat analitik penjualan toko  
 {% endapi-method-description %}
 
 {% api-method-spec %}
 {% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="" type="string" required=false %}
-
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
-{% endapi-method-request %}
 
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
@@ -405,13 +414,16 @@ API Endpoint untuk melihat analitik penjualan toko
 {% endapi-method-spec %}
 {% endapi-method %}
 
+![](.gitbook/assets/image%20%287%29.png)
+
 {% api-method method="get" host="batong.id" path="/api/penjual/demografi-pembeli" %}
 {% api-method-summary %}
 Lihat Demografi Pembeli
 {% endapi-method-summary %}
 
 {% api-method-description %}
-API Endpoint untuk melihat demografi pembeli
+API Endpoint untuk melihat demografi pembeli  
+  
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -424,27 +436,23 @@ API Endpoint untuk melihat demografi pembeli
 {% endapi-method-response-example-description %}
 
 ```javascript
-[
-    {
-        "profilePembeli" : {
-                                "nama" : "putri",
-                                "alamat" : "Jakarta",
-                            }
-                            
-    },
-    {
-        "profilePembeli" : {
-                                "nama" : "putra",
-                                "alamat" : "Jakarta"
-                            }
-                            
-    }
-]
+{
+    "totalPembeli":5000,
+    "lokasi": 
+    [
+        { "depok"  : 500 },
+        { "jakarta" : 100},
+        { "surabaya" : 4400},
+    ]
+
+}
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
+
+![](.gitbook/assets/jepretan-layar-2021-08-24-pukul-11.19.41.png)
 
 
 
@@ -460,7 +468,7 @@ Lihat Semua Produk
 {% endapi-method-summary %}
 
 {% api-method-description %}
-API Endpoint untuk melihat semua produk
+API Endpoint untuk melihat semua produk  
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -495,13 +503,15 @@ API Endpoint untuk melihat semua produk
 {% endapi-method-spec %}
 {% endapi-method %}
 
+![](.gitbook/assets/image%20%286%29.png)
+
 {% api-method method="get" host="batong.id" path="/api/pembeli/produk/:kodeProduk" %}
 {% api-method-summary %}
 Lihat Detail Produk
 {% endapi-method-summary %}
 
 {% api-method-description %}
-API Endpoint untuk melihat detail produk
+API Endpoint untuk melihat detail produk  
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -534,13 +544,15 @@ Kode Produk
 {% endapi-method-spec %}
 {% endapi-method %}
 
+![](.gitbook/assets/image%20%285%29.png)
+
 {% api-method method="post" host="batong.id" path="/api/pembeli/produk/:kodeProduk/buat-pesanan" %}
 {% api-method-summary %}
 Tambah Pesanan produk
 {% endapi-method-summary %}
 
 {% api-method-description %}
-API Endpoint untuk menambahkan pesanan produk
+API Endpoint untuk menambahkan pesanan produk  
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -616,6 +628,8 @@ Metode Pengiriman
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
+
+![](.gitbook/assets/image%20%282%29.png)
 
 {% api-method method="get" host="batong.id" path="/api/pembeli/pesanan" %}
 {% api-method-summary %}
