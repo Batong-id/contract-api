@@ -1,15 +1,15 @@
 ---
-description: Dokumentasi API Batong App. Belum fix masih bisa berubah
+description: Dokumentasi API Batong App. Belum fix masih bisa berubah.
 ---
 
 # Batong API Documentation
 
 ## E-Commerce
 
-Figma :   
+Figma:   
 [https://www.figma.com/file/CjvLnon7sAZZ4TEh9163is/Batong-Prototype?node-id=457%3A1269](https://www.figma.com/file/CjvLnon7sAZZ4TEh9163is/Batong-Prototype?node-id=457%3A1269)
 
-Requirements : [https://docs.google.com/document/d/1pg4pn5dQTBx2mAs2vTc\_4r78ucwsWh5Ud6SVCCm2Brg/edit?usp=sharing](https://docs.google.com/document/d/1pg4pn5dQTBx2mAs2vTc_4r78ucwsWh5Ud6SVCCm2Brg/edit?usp=sharing)
+Requirements: [https://docs.google.com/document/d/1pg4pn5dQTBx2mAs2vTc\_4r78ucwsWh5Ud6SVCCm2Brg/edit?usp=sharing](https://docs.google.com/document/d/1pg4pn5dQTBx2mAs2vTc_4r78ucwsWh5Ud6SVCCm2Brg/edit?usp=sharing)
 
 ### 🧑🏻‍💼 **Penjual** <a id="penjual"></a>
 
@@ -24,7 +24,7 @@ Lihat Analitik Toko
 {% endapi-method-summary %}
 
 {% api-method-description %}
-API Endpoint untuk melihat analitik toko : pesanan selesai, produk dilihat, produk terpopuler
+API Endpoint untuk melihat analitik toko: pesanan selesai, produk dilihat, produk terpopuler
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -331,7 +331,7 @@ API Endpoint untuk melihat detail pesanan
 
 ```javascript
  {
-        "statusPesanan" : "semua", //opsi status pesanan : semua, belum dibayar, perlu diproses, dikirim, selesai, dll.
+        "statusPesanan" : "semua", // opsi status pesanan: semua, belum dibayar, perlu diproses, dikirim, selesai, dll.
         "kodePesanan" : "PR001",
         "produk" :  {
                         "kodeProduk": "PR001", 
